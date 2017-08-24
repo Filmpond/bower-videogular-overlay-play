@@ -25,9 +25,9 @@ angular.module("com.2fdevs.videogular.plugins.overlayplay", [])
         ["$templateCache", function ($templateCache) {
             $templateCache.put("vg-templates/vg-overlay-play",
                 '<div class="overlayPlayContainer" ng-click="onClickOverlayPlay()">\
-                  Play film\
                   <div class="iconButton" ng-class="overlayPlayIcon"></div>\
-                </div>');
+                  <span class="visually-hidden">Play film</span>\
+                  </div>');
         }]
     )
     .directive("vgOverlayPlay", ["VG_STATES",
